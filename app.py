@@ -11,6 +11,8 @@ create_database()
 user_sessions = {}
 
 
+
+
 @app.route("/")
 def home():
     return render_template("index.html")
