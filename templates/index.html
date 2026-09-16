@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRISM AI Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="chat-container">
+
+        <div class="chat-header">
+            <div>
+                <h2>PRISM AI Assistant</h2>
+                <p>Online • We're here to help</p>
+            </div>
+        </div>
+
+        <div class="chat-messages" id="chatMessages">
+
+            <div class="bot-message">
+                <p>
+                    👋 Hello! Welcome to PRISM.
+                    I'm your AI assistant. How can I help you today?
+                </p>
+            </div>
+
+            <div class="bot-message">
+                <p>You can ask me about:</p>
+
+                <div class="service-buttons">
+                    <button>Website Development</button>
+                    <button>Mobile App Development</button>
+                    <button>CRM / ERP</button>
+                    <button>Odoo</button>
+                    <button>AI Automation</button>
+                    <button>AI Chatbots</button>
+                    <button>Digital Marketing</button>
+                    <button>DevOps / Cloud</button>
+                    <button>Blockchain</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="chat-input">
+            <input
+                type="text"
+                id="messageInput"
+                placeholder="Type your message..."
+                autocomplete="off"
+            >
+            <button id="sendButton">Send</button>
+        </div>
+
+    </div>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
